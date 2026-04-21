@@ -75,6 +75,7 @@ safeInit(() => {
 
   function applyTheme(theme, persist = true) {
     root.dataset.theme = theme;
+    toggleButton?.setAttribute("aria-pressed", String(theme === "dark"));
     if (persist) {
       localStorage.setItem("faizan-theme", theme);
     }

@@ -166,7 +166,7 @@ body.cursor-hover .cursor-ring {
   justify-content: center;
   gap: 1.2rem;
   width: fit-content;
-  max-width: min(1120px, calc(100% - 2rem));
+  max-width: min(1240px, calc(100% - 2rem));
   padding: 0.8rem 0.9rem;
   border-radius: 999px;
   background:
@@ -436,27 +436,53 @@ body[data-theme="dark"] .site-nav a:hover {
   background: none;
   color: var(--text);
   cursor: pointer;
+  padding: 0;
 }
 
 .theme-toggle-track {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  padding: 0.38rem 0.55rem;
+  gap: 0.62rem;
+  padding: 0.42rem 0.62rem;
   border-radius: 999px;
   border: 1px solid rgba(150, 110, 72, 0.14);
   background: rgba(255, 252, 247, 0.42);
 }
 
+.theme-switch-visual {
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  --size-of-icon: 1.4em;
+  --slider-offset: 0.3em;
+  position: relative;
+  display: block;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+  flex: 0 0 auto;
+  border-radius: 30px;
+  background-color: #f4f4f5;
+  box-shadow:
+    inset 0 0 0 1px rgba(150, 110, 72, 0.08),
+    0 6px 14px rgba(93, 60, 27, 0.08);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
 .theme-toggle-thumb {
-  width: 0.75rem;
-  height: 0.75rem;
+  position: absolute;
+  left: var(--slider-offset);
+  top: 50%;
+  width: var(--size-of-icon);
+  height: var(--size-of-icon);
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  box-shadow: none;
+  transition: left 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
 }
 
 .theme-toggle-label {
   font-size: 0.84rem;
+  font-weight: 700;
   color: var(--muted-soft);
   transition: color 180ms ease;
 }
@@ -464,6 +490,21 @@ body[data-theme="dark"] .site-nav a:hover {
 body[data-theme="light"] .theme-toggle-light,
 body[data-theme="dark"] .theme-toggle-dark {
   color: var(--text);
+}
+
+body[data-theme="dark"] .theme-switch-visual {
+  background-color: #303136;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+body[data-theme="dark"] .theme-toggle-thumb {
+  left: calc(100% - (var(--size-of-icon) + var(--slider-offset)));
+  background: #303136;
+  box-shadow:
+    inset -3px -2px 5px -2px #8983f7,
+    inset -10px -4px 0 0 #a3dafb;
 }
 
 main {
@@ -1629,5 +1670,13 @@ span {
 
   .contact-send-text {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out !important;
+  }
+
+  .theme-switch-visual {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease !important;
+  }
+
+  .theme-toggle-thumb {
+    transition: left 0.4s ease, background 0.4s ease, box-shadow 0.4s ease !important;
   }
 }
