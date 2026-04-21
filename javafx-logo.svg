@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>JavaFX logo</title>
+  <defs>
+    <linearGradient id="javafx-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#f07d19"/>
+    </linearGradient>
+    <linearGradient id="javafx-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#53b7ff"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <path d="M18 44c8.2 2.8 20.2 2.7 28-.2" fill="none" stroke="url(#javafx-blue)" stroke-linecap="round" stroke-width="3.2"/>
+  <path d="M23.5 37.5c4.3 1.3 12 1.2 17.1-.1" fill="none" stroke="url(#javafx-blue)" stroke-linecap="round" stroke-width="2.5"/>
+  <path d="M33.2 14.5c2.8 3.1 2.8 6.5.1 9.3-2.8 2.8-2.8 5.5.4 8.2" fill="none" stroke="url(#javafx-orange)" stroke-linecap="round" stroke-width="3.5"/>
+  <path d="M27.8 17.6c2 2.2 2 4.5 0 6.7-1.9 2.1-1.9 4.2.2 6.3" fill="none" stroke="url(#javafx-orange)" stroke-linecap="round" stroke-width="2.7"/>
+  <path d="M22 48.5h8.7l-2.9-9.1h-2.9Zm18.6-9.1-5 9.1h3.1l1-2h4.7l1 2h3.2l-5-9.1Zm.3 5 1.2-2.3 1.2 2.3Zm-5.8-5-.2 5.1-3.5-5.1H29l5 7v2.1h3v-2l4.9-7Z" fill="#1f2937"/>
+</svg>

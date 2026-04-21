@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Scene Builder icon</title>
+  <defs>
+    <linearGradient id="scene-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd34f"/>
+      <stop offset="100%" stop-color="#f29a1a"/>
+    </linearGradient>
+    <linearGradient id="scene-core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb642"/>
+      <stop offset="100%" stop-color="#f1781a"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="29" fill="url(#scene-ring)"/>
+  <circle cx="32" cy="32" r="22" fill="url(#scene-core)"/>
+  <path d="M20.8 24.4c0-2.8 2.3-5 5.1-5 2.5 0 4.5 1.7 4.9 4l.5 2.8 1.9-2.3a4.8 4.8 0 0 1 3.7-1.7c2.7 0 4.9 2.2 4.9 4.9 0 .8-.2 1.6-.6 2.3l-2.2 4.1 4.7 1.4a4.8 4.8 0 0 1 3.4 4.6c0 2.7-2.2 4.9-4.9 4.9-.5 0-1-.1-1.5-.2l-9.4-3.1-3.5 5.3a4.9 4.9 0 0 1-4 2.2 4.8 4.8 0 0 1-4.8-4.8c0-.7.1-1.4.4-2l2.5-5.3-3.6-2a4.9 4.9 0 0 1-2.5-4.3c0-2.1 1.4-4 3.4-4.6l3-.9-.6-3.3c0-.3-.1-.7-.1-1Z" fill="#fff4d7"/>
+  <path d="m27.4 22.6 2.1 12.2-3.3 7.1c-.2.4-.3.7-.3 1.1 0 1.2 1 2.1 2.2 2.1.7 0 1.4-.3 1.8-.9l4.5-6.9 9.2 3c.2.1.4.1.6.1 1.2 0 2.1-.9 2.1-2.1 0-.9-.6-1.8-1.5-2l-8-2.4 3.2-6c.1-.3.2-.6.2-1 0-1.2-.9-2.1-2.1-2.1-.7 0-1.3.3-1.7.8l-5.5 6.6-1.4-8.5c-.2-1-1.1-1.7-2.1-1.7-1.2 0-2.1.9-2.1 2.1 0 .2 0 .4.1.6Z" fill="#d9481f"/>
+</svg>

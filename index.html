@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Kazi | Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Faizan Altaf Kazi, a recent Computer Science Engineering graduate building elegant, reliable, and creative digital experiences."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="cursor cursor-dot" aria-hidden="true"></div>
+    <div class="cursor cursor-ring" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header">
+      <div class="island-shell">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="island-meta">
+          <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+            <span class="theme-toggle-track">
+              <span class="theme-toggle-label theme-toggle-light">Light</span>
+              <span class="theme-toggle-thumb"></span>
+              <span class="theme-toggle-label theme-toggle-dark">Dark</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <aside class="section-rail" aria-label="Section progress">
+      <div class="section-rail-shell">
+        <a class="section-rail-link is-active" href="#home" data-section-link="home">
+          <span class="section-rail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M4 10.5 12 4l8 6.5"></path>
+              <path d="M6.5 9.5V20h11V9.5"></path>
+            </svg>
+          </span>
+          <span class="section-rail-text">Home</span>
+        </a>
+        <a class="section-rail-link" href="#about" data-section-link="about">
+          <span class="section-rail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <circle cx="12" cy="8" r="3"></circle>
+              <path d="M6.5 19c1.4-3.4 3.6-5 5.5-5s4.1 1.6 5.5 5"></path>
+            </svg>
+          </span>
+          <span class="section-rail-text">About</span>
+        </a>
+        <a class="section-rail-link" href="#experience" data-section-link="experience">
+          <span class="section-rail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M9 7h6"></path>
+              <path d="M7 9.5h10A1.5 1.5 0 0 1 18.5 11v6.5H5.5V11A1.5 1.5 0 0 1 7 9.5Z"></path>
+              <path d="M10 9.5V7.8A1.8 1.8 0 0 1 11.8 6h.4A1.8 1.8 0 0 1 14 7.8v1.7"></path>
+            </svg>
+          </span>
+          <span class="section-rail-text">Experience</span>
+        </a>
+        <a class="section-rail-link" href="#projects" data-section-link="projects">
+          <span class="section-rail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <rect x="5" y="6" width="14" height="12" rx="2"></rect>
+              <path d="M9 18v2"></path>
+              <path d="M15 18v2"></path>
+              <path d="M9 10h6"></path>
+              <path d="M9 13h4"></path>
+            </svg>
+          </span>
+          <span class="section-rail-text">Projects</span>
+        </a>
+        <a class="section-rail-link" href="#skills" data-section-link="skills">
+          <span class="section-rail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M4 10v4"></path>
+              <path d="M7 9v6"></path>
+              <path d="M10 8.5v7"></path>
+              <path d="M14 8.5v7"></path>
+              <path d="M17 9v6"></path>
+              <path d="M20 10v4"></path>
+              <path d="M4 12h16"></path>
+            </svg>
+          </span>
+          <span class="section-rail-text">Skills</span>
+        </a>
+        <a class="section-rail-link" href="#certifications" data-section-link="certifications">
+          <span class="section-rail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 3 14.6 8.3 20.5 9.2 16.2 13.3 17.2 19.1 12 16.3 6.8 19.1 7.8 13.3 3.5 9.2 9.4 8.3Z"></path>
+            </svg>
+          </span>
+          <span class="section-rail-text">Certs</span>
+        </a>
+        <a class="section-rail-link" href="#contact" data-section-link="contact">
+          <span class="section-rail-icon section-rail-icon-phone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.81.33 1.6.61 2.36a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.72-1.27a2 2 0 0 1 2.11-.45c.76.28 1.55.49 2.36.61a2 2 0 0 1 1.72 2.03Z"></path>
+            </svg>
+          </span>
+          <span class="section-rail-text">Contact</span>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hello, I&apos;m</p>
+          <h1>Faizan Kazi</h1>
+          <p class="hero-kicker">Computer Science Engineer</p>
+          <p class="hero-text">
+            Junior Software Developer | Networking & Cybersecurity Focus
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#contact">Let&apos;s Connect</a>
+          </div>
+
+          <ul class="hero-meta" aria-label="Quick highlights">
+            <li>Dubai, UAE</li>
+            <li>BSc in Computer Science Engineering</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel reveal">
+          <div class="hero-card card">
+            <p class="card-label">Now</p>
+            <h2>Building my next chapter...</h2>
+            <p>
+              Recent Computer Science graduate focused on building practical software systems and developing my skills in networking and cybersecurity.
+            </p>
+            <div class="hero-stats">
+              <div>
+                <span class="stat-value">4</span>
+                <span class="stat-label">Featured projects</span>
+              </div>
+              <div>
+                <span class="stat-value">2026</span>
+                <span class="stat-label">BSc completed</span>
+              </div>
+              <div>
+                <span class="stat-value">4+</span>
+                <span class="stat-label">Cisco certifications</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro-grid" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2> A Little About Me </h2>
+        </div>
+
+        <div class="card reveal">
+          <p>
+            I recently completed my <strong>BSc in Computer Science Engineering</strong> at the
+            <strong>University of Debrecen, Hungary</strong>.
+          </p>
+          <p class="education-dates">Aug 2022 - Feb 2026</p>
+        </div>
+
+        <div class="card reveal">
+          <p>
+            Hands-on experience in software development, systems, and networking. 
+            Particularly interested in frontend development and cybersecurity, where I enjoy understanding how systems are built and secured.
+          </p>
+        </div>
+
+        <div class="education-logo-wrap reveal">
+          <a
+            class="education-logo-link"
+            href="https://unideb.hu/en"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Visit the University of Debrecen website"
+          >
+            <img
+              class="education-logo"
+              src="https://edu.unideb.hu/elemek/fologo.png"
+              alt="University of Debrecen logo"
+            >
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2> Where I Applied My Skills </h2>
+        </div>
+
+        <article class="timeline-card card reveal">
+          <div class="timeline-header">
+            <div class="timeline-company">
+              <div>
+                <img
+                  class="experience-logo experience-logo-company"
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Aramex_logo.svg"
+                  alt="Aramex logo"
+                >
+                <p class="timeline-role">Digital and Technology Intern</p>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <div class="timeline-location">
+                <span>Dubai, United Arab Emirates</span>
+              </div>
+              <span>Jul 2025 - Sep 2025</span>
+            </div>
+          </div>
+
+          <ul class="detail-list">
+            <li>Supported SAP S/4HANA and SAP Ariba User Acceptance Testing for the Oceania region.</li>
+            <li>Built and maintained a defect tracking workflow using SharePoint, Power Apps, and Power Automate.</li>
+            <li>Configured basic permissions, issue logging, and automated stakeholder notifications.</li>
+            <li>Learned how SAP testing workflows and cross-regional project coordination operate in an enterprise environment.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Projects Ive Worked On </h2>
+        </div>
+
+        <div class="project-grid">
+          <article
+            class="project-card reveal"
+            data-project-url="https://kaz032.github.io/Encryptonite-demo/"
+            tabindex="0"
+            role="link"
+            aria-label="Open Secure Encryption Password Manager project demo"
+          >
+            <div class="project-card-inner">
+              <div class="project-card-face project-card-front">
+                <img
+                  class="project-front-logo"
+                  src="fullLogoEncryptonite.png"
+                  alt="Encryptonite logo"
+                >
+                <span class="project-interact-cue" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="presentation">
+                    <path d="M19.6 43.2 15 27.5a2.8 2.8 0 0 1 5.4-1.6l2 6.7V14.8a3.3 3.3 0 1 1 6.6 0v10.8a3.1 3.1 0 0 1 5-1.8 3 3 0 0 1 5.2 1.7 3 3 0 0 1 5.5 1.5v8.7c0 5.7-4.6 10.3-10.3 10.3h-6.4c-4 0-7.4-2.4-8.4-6Z"></path>
+                    <path d="M24 2.2v5.6"></path>
+                    <path d="m13 7.2 4.2 4.2"></path>
+                    <path d="m35 7.2-4.2 4.2"></path>
+                    <path d="M7.8 16.2h5.8"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-card-face project-card-back">
+                <div class="project-top">
+                  
+                  <h3>Secure Encryption Password Manager</h3>
+                </div>
+                <p>
+                  A local password manager with a React frontend and FastAPI backend supporting isolated user accounts,
+                  encrypted vaults, password generation, and strength analysis.
+                </p>
+                <ul class="tag-row">
+                  <li>Python</li>
+                  <li>React</li>
+                  <li>FastAPI</li>
+                  <li>Cryptography</li>
+                </ul>
+                <p class="project-why"><strong>Why?</strong> I built this to strengthen my full-stack skills while learning how secure authentication and encryption work in practice.</p>
+                <span class="project-view-hint">Click To View Project</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-project-url="VR_THESIS_PPT.pdf"
+            tabindex="0"
+            role="link"
+            aria-label="Open VR Fire Safety Training Simulation presentation"
+          >
+            <div class="project-card-inner">
+              <div class="project-card-face project-card-front">
+                <svg class="project-front-icon project-front-icon-vr" viewBox="0 0 320 240" aria-label="VR headset icon" role="img">
+                  <path class="vr-headband" d="M94 68C98 36 123 12 160 12s62 24 66 56h-12c-5-24-24-39-54-39s-49 15-54 39Z"></path>
+                  <rect class="vr-body" x="60" y="84" width="200" height="82" rx="22"></rect>
+                  <rect class="vr-side" x="45" y="104" width="8" height="40" rx="4"></rect>
+                  <rect class="vr-side" x="267" y="104" width="8" height="40" rx="4"></rect>
+                  <circle class="vr-lens" cx="122" cy="125" r="18"></circle>
+                  <circle class="vr-lens" cx="198" cy="125" r="18"></circle>
+                  <text class="vr-wordmark" x="160" y="205" text-anchor="middle" dominant-baseline="middle">VR</text>
+                </svg>
+                <span class="project-interact-cue" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="presentation">
+                    <path d="M19.6 43.2 15 27.5a2.8 2.8 0 0 1 5.4-1.6l2 6.7V14.8a3.3 3.3 0 1 1 6.6 0v10.8a3.1 3.1 0 0 1 5-1.8 3 3 0 0 1 5.2 1.7 3 3 0 0 1 5.5 1.5v8.7c0 5.7-4.6 10.3-10.3 10.3h-6.4c-4 0-7.4-2.4-8.4-6Z"></path>
+                    <path d="M24 2.2v5.6"></path>
+                    <path d="m13 7.2 4.2 4.2"></path>
+                    <path d="m35 7.2-4.2 4.2"></path>
+                    <path d="M7.8 16.2h5.8"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-card-face project-card-back">
+                <div class="project-top">
+                  
+                  <h3>VR Fire Safety Training Simulation</h3>
+                </div>
+                <p>
+                  A thesis project built in Unity and Blender that simulates real-life fire safety scenarios with guided
+                  training, interactive tasks, and performance-based assessment.
+                </p>
+                <ul class="tag-row">
+                  <li>Unity</li>
+                  <li>Blender</li>
+                  <li>C#</li>
+                  <li>VR</li>
+                </ul>
+                <p class="project-why"><strong>Why?</strong> I built this to improve my 3D development skills and learn how immersive environments can make safety training more effective.</p>
+                <span class="project-view-hint">Click To View Project</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-card-face project-card-front">
+                <img
+                  class="project-front-logo project-front-logo-joke"
+                  src="jokeFetchApp.png"
+                  alt="Joke Fetcher App logo"
+                >
+                <span class="project-interact-cue" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="presentation">
+                    <path d="M19.6 43.2 15 27.5a2.8 2.8 0 0 1 5.4-1.6l2 6.7V14.8a3.3 3.3 0 1 1 6.6 0v10.8a3.1 3.1 0 0 1 5-1.8 3 3 0 0 1 5.2 1.7 3 3 0 0 1 5.5 1.5v8.7c0 5.7-4.6 10.3-10.3 10.3h-6.4c-4 0-7.4-2.4-8.4-6Z"></path>
+                    <path d="M24 2.2v5.6"></path>
+                    <path d="m13 7.2 4.2 4.2"></path>
+                    <path d="m35 7.2-4.2 4.2"></path>
+                    <path d="M7.8 16.2h5.8"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-card-face project-card-back">
+                <div class="project-top">
+                  
+                  <h3>Joke Fetcher App</h3>
+                </div>
+                <p>
+                  An Android app that fetches random jokes, reveals punchlines on tap, saves favorites, and supports local
+                  caching for offline viewing.
+                </p>
+                <ul class="tag-row">
+                  <li>Android Studio</li>
+                  <li>Java</li>
+                  <li>REST APIs</li>
+                  <li>Offline Cache</li>
+                </ul>
+                <p class="project-why"><strong>Why?</strong> I built this to practice Android app development and learn how API data and local storage can work together smoothly.</p>
+                <span class="project-view-hint">Click To View Project</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-card-face project-card-front">
+                <div class="project-front-badge">
+                  <img
+                    class="project-front-logo project-front-logo-round"
+                    src="parkSphere.png"
+                    alt="ParkSphere logo"
+                  >
+                </div>
+                <span class="project-interact-cue" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="presentation">
+                    <path d="M19.6 43.2 15 27.5a2.8 2.8 0 0 1 5.4-1.6l2 6.7V14.8a3.3 3.3 0 1 1 6.6 0v10.8a3.1 3.1 0 0 1 5-1.8 3 3 0 0 1 5.2 1.7 3 3 0 0 1 5.5 1.5v8.7c0 5.7-4.6 10.3-10.3 10.3h-6.4c-4 0-7.4-2.4-8.4-6Z"></path>
+                    <path d="M24 2.2v5.6"></path>
+                    <path d="m13 7.2 4.2 4.2"></path>
+                    <path d="m35 7.2-4.2 4.2"></path>
+                    <path d="M7.8 16.2h5.8"></path>
+                  </svg>
+                </span>
+              </div>
+              <div class="project-card-face project-card-back">
+                <div class="project-top">
+                  
+                  <h3>Parking Reservation System</h3>
+                </div>
+                <p>
+                  A desktop reservation system designed for car park booking with modular backend structure, secure database
+                  handling, and UI touches like hover interactions and info pop-ups.
+                </p>
+                <ul class="tag-row">
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>MySQL</li>
+                  <li>Desktop App</li>
+                </ul>
+                <p class="project-why"><strong>Why?</strong> I built this to improve my backend design thinking and learn how to connect structured booking logic with a usable interface.</p>
+                <span class="project-view-hint">Click To View Project</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </section>
+
+      <section class="section skills-layout" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2> Technical Skills </h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card reveal">
+            <h3>Programming</h3>
+            <ul class="detail-list skills-list">
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt=""></span><span>Python</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt=""></span><span>Java</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""></span><span>HTML</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt=""></span><span>C</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt=""></span><span>C++</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" alt=""></span><span>MATLAB</span></li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Frameworks & Platforms</h3>
+            <ul class="detail-list skills-list">
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt=""></span><span>MySQL</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt=""></span><span>Spring Boot</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo skill-logo-javafx" src="javafx-logo.svg" alt=""></span><span>JavaFX</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="scenebuilder-logo.svg" alt=""></span><span>Scene Builder</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opengl/opengl-original.svg" alt=""></span><span>OpenGL</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt=""></span><span>Unity</span></li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Tools & Software</h3>
+            <ul class="detail-list skills-list">
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Wireshark_icon.svg" alt=""></span><span>Wireshark</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" alt=""></span><span>IntelliJ</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" alt=""></span><span>Android Studio</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" alt=""></span><span>Blender</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo skill-logo-wide" src="cisco-packet-tracer-logo.svg" alt=""></span><span>Cisco Packet Tracer</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg" alt=""></span><span>Raspberry Pi</span></li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Design & Planning</h3>
+            <ul class="detail-list skills-list">
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt=""></span><span>Figma</span></li>
+              <li><span class="skill-icon" aria-hidden="true"><img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" alt=""></span><span>Trello</span></li>
+              <li><span class="skill-icon skill-icon-glyph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="skill-glyph" role="presentation">
+                  <circle cx="6.5" cy="6.5" r="1.75"></circle>
+                  <circle cx="17.5" cy="12" r="1.75"></circle>
+                  <circle cx="6.5" cy="17.5" r="1.75"></circle>
+                  <path d="M8.1 7.3 15.9 11.2"></path>
+                  <path d="M8.1 16.7 15.9 12.8"></path>
+                </svg>
+              </span><span>Workflow structuring</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section credentials-section" id="certifications">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Certifications</p>
+          <h2>Networking and cybersecurity foundations.</h2>
+        </div>
+
+        <div class="credentials-grid">
+          <div class="credentials-brand reveal" aria-hidden="true">
+            <img src="cisco-logo.svg" alt="">
+          </div>
+          <a class="card reveal credential-card-link" href="CCNA-Introduction_to_Networks.pdf" target="_blank" rel="noreferrer">
+            <div class="credential-mark" aria-hidden="true">01</div>
+            <div class="credential-copy">
+              <h3>CCNA: Introduction to Networks</h3>
+            </div>
+            <span class="credential-view" aria-hidden="true">
+              <span class="credential-icon credential-icon-hand">
+                <svg viewBox="0 0 48 48" role="presentation">
+                  <path d="M19.6 43.2 15 27.5a2.8 2.8 0 0 1 5.4-1.6l2 6.7V14.8a3.3 3.3 0 1 1 6.6 0v10.8a3.1 3.1 0 0 1 5-1.8 3 3 0 0 1 5.2 1.7 3 3 0 0 1 5.5 1.5v8.7c0 5.7-4.6 10.3-10.3 10.3h-6.4c-4 0-7.4-2.4-8.4-6Z"></path>
+                  <path d="M24 2.2v5.6"></path>
+                  <path d="m13 7.2 4.2 4.2"></path>
+                  <path d="m35 7.2-4.2 4.2"></path>
+                  <path d="M7.8 16.2h5.8"></path>
+                </svg>
+              </span>
+              <span class="credential-icon credential-icon-eye">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M2.5 12s3.5-5.5 9.5-5.5 9.5 5.5 9.5 5.5-3.5 5.5-9.5 5.5S2.5 12 2.5 12Z"></path>
+                  <circle cx="12" cy="12" r="3.1"></circle>
+                </svg>
+              </span>
+            </span>
+          </a>
+          <a class="card reveal credential-card-link" href="CISCO- Introduction_to_Cybersecurity.pdf" target="_blank" rel="noreferrer">
+            <div class="credential-mark" aria-hidden="true">02</div>
+            <div class="credential-copy">
+              <h3>Introduction to Cybersecurity</h3>
+            </div>
+            <span class="credential-view" aria-hidden="true">
+              <span class="credential-icon credential-icon-hand">
+                <svg viewBox="0 0 48 48" role="presentation">
+                  <path d="M19.6 43.2 15 27.5a2.8 2.8 0 0 1 5.4-1.6l2 6.7V14.8a3.3 3.3 0 1 1 6.6 0v10.8a3.1 3.1 0 0 1 5-1.8 3 3 0 0 1 5.2 1.7 3 3 0 0 1 5.5 1.5v8.7c0 5.7-4.6 10.3-10.3 10.3h-6.4c-4 0-7.4-2.4-8.4-6Z"></path>
+                  <path d="M24 2.2v5.6"></path>
+                  <path d="m13 7.2 4.2 4.2"></path>
+                  <path d="m35 7.2-4.2 4.2"></path>
+                  <path d="M7.8 16.2h5.8"></path>
+                </svg>
+              </span>
+              <span class="credential-icon credential-icon-eye">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M2.5 12s3.5-5.5 9.5-5.5 9.5 5.5 9.5 5.5-3.5 5.5-9.5 5.5S2.5 12 2.5 12Z"></path>
+                  <circle cx="12" cy="12" r="3.1"></circle>
+                </svg>
+              </span>
+            </span>
+          </a>
+          <a class="card reveal credential-card-link" href="CISCO-Networking_Devices_and_Initial_Configuration.pdf" target="_blank" rel="noreferrer">
+            <div class="credential-mark" aria-hidden="true">03</div>
+            <div class="credential-copy">
+              <h3>Networking Devices & Configuration</h3>
+            </div>
+            <span class="credential-view" aria-hidden="true">
+              <span class="credential-icon credential-icon-hand">
+                <svg viewBox="0 0 48 48" role="presentation">
+                  <path d="M19.6 43.2 15 27.5a2.8 2.8 0 0 1 5.4-1.6l2 6.7V14.8a3.3 3.3 0 1 1 6.6 0v10.8a3.1 3.1 0 0 1 5-1.8 3 3 0 0 1 5.2 1.7 3 3 0 0 1 5.5 1.5v8.7c0 5.7-4.6 10.3-10.3 10.3h-6.4c-4 0-7.4-2.4-8.4-6Z"></path>
+                  <path d="M24 2.2v5.6"></path>
+                  <path d="m13 7.2 4.2 4.2"></path>
+                  <path d="m35 7.2-4.2 4.2"></path>
+                  <path d="M7.8 16.2h5.8"></path>
+                </svg>
+              </span>
+              <span class="credential-icon credential-icon-eye">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M2.5 12s3.5-5.5 9.5-5.5 9.5 5.5 9.5 5.5-3.5 5.5-9.5 5.5S2.5 12 2.5 12Z"></path>
+                  <circle cx="12" cy="12" r="3.1"></circle>
+                </svg>
+              </span>
+            </span>
+          </a>
+          <a class="card reveal credential-card-link" href="CISCO-Networking_Basics.pdf" target="_blank" rel="noreferrer">
+            <div class="credential-mark" aria-hidden="true">04</div>
+            <div class="credential-copy">
+              <h3>Networking Basics</h3>
+            </div>
+            <span class="credential-view" aria-hidden="true">
+              <span class="credential-icon credential-icon-hand">
+                <svg viewBox="0 0 48 48" role="presentation">
+                  <path d="M19.6 43.2 15 27.5a2.8 2.8 0 0 1 5.4-1.6l2 6.7V14.8a3.3 3.3 0 1 1 6.6 0v10.8a3.1 3.1 0 0 1 5-1.8 3 3 0 0 1 5.2 1.7 3 3 0 0 1 5.5 1.5v8.7c0 5.7-4.6 10.3-10.3 10.3h-6.4c-4 0-7.4-2.4-8.4-6Z"></path>
+                  <path d="M24 2.2v5.6"></path>
+                  <path d="m13 7.2 4.2 4.2"></path>
+                  <path d="m35 7.2-4.2 4.2"></path>
+                  <path d="M7.8 16.2h5.8"></path>
+                </svg>
+              </span>
+              <span class="credential-icon credential-icon-eye">
+                <svg viewBox="0 0 24 24" role="presentation">
+                  <path d="M2.5 12s3.5-5.5 9.5-5.5 9.5 5.5 9.5 5.5-3.5 5.5-9.5 5.5S2.5 12 2.5 12Z"></path>
+                  <circle cx="12" cy="12" r="3.1"></circle>
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-card card reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Let&apos;s build something meaningful.</h2>
+
+            <div class="contact-links">
+              <a href="mailto:faizankazi03@gmail.com">
+                <span class="contact-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <rect x="3.5" y="6" width="17" height="12" rx="2.5"></rect>
+                    <path d="m5.5 8 6.5 5 6.5-5"></path>
+                  </svg>
+                </span>
+                <span>faizankazi03@gmail.com</span>
+              </a>
+              <a href="tel:+971582686523">
+                <span class="contact-link-icon contact-link-icon-phone" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.81.33 1.6.61 2.36a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.72-1.27a2 2 0 0 1 2.11-.45c.76.28 1.55.49 2.36.61a2 2 0 0 1 1.72 2.03Z"></path>
+                  </svg>
+                </span>
+                <span>+971 58 268 6523</span>
+              </a>
+              <a href="https://linkedin.com/in/faizan-kazi3" target="_blank" rel="noreferrer">
+                <span class="contact-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+                    <path d="M8.2 10.1v5.7"></path>
+                    <path d="M8.2 8.1h.01"></path>
+                    <path d="M11.8 15.8v-3.2c0-1.2.7-2 1.8-2s1.7.8 1.7 2.1v3.1"></path>
+                    <path d="M11.8 12.5v-2.4"></path>
+                  </svg>
+                </span>
+                <span>linkedin.com/in/faizan-kazi3</span>
+              </a>
+              <span>
+                <span class="contact-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M12 20.5s-5.5-5.1-5.5-10a5.5 5.5 0 1 1 11 0c0 4.9-5.5 10-5.5 10Z"></path>
+                    <circle cx="12" cy="10.5" r="2"></circle>
+                  </svg>
+                </span>
+                <span>Dubai, United Arab Emirates</span>
+              </span>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="subject" value="Portfolio contact form">
+            <p class="contact-hidden">
+              <label>Don&apos;t fill this out if you&apos;re human: <input name="bot-field"></label>
+            </p>
+
+            <label class="contact-field">
+              <span>Your Email</span>
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </label>
+
+            <label class="contact-field">
+              <span>Your Message</span>
+              <textarea name="message" rows="6" placeholder="Tell me a little about your project, role, or idea..." required></textarea>
+            </label>
+
+            <button class="contact-send-button" type="submit">
+              <span class="svg-wrapper-1" aria-hidden="true">
+                <span class="svg-wrapper">
+                  <svg viewBox="0 0 24 24" width="24" height="24" role="presentation">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      fill="currentColor"
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    ></path>
+                  </svg>
+                </span>
+              </span>
+              <span class="contact-send-text">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Faizan Altaf Kazi</p>
+      
+    </footer>
+  </div>
+
+  <script src="script.js?v=6"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">VR icon options</title>
+  <desc id="desc">A grid of six orange VR goggle icon options on light cards.</desc>
+  <rect width="1200" height="820" fill="#f4efe7"/>
+  <style>
+    .card { fill: #fff8f1; stroke: #d8c6b3; stroke-width: 2; rx: 28; }
+    .label { font: 700 28px Manrope, Arial, sans-serif; fill: #5f5249; }
+    .hint { font: 500 18px Manrope, Arial, sans-serif; fill: #8c7d72; }
+    .icon { fill: none; stroke: #f08a24; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+    .solid { fill: #f08a24; stroke: none; }
+  </style>
+
+  <g transform="translate(60 50)">
+    <rect class="card" width="320" height="320" rx="28"/>
+    <text class="label" x="28" y="44">Option 1</text>
+    <text class="hint" x="28" y="74">Rounded balanced</text>
+    <g transform="translate(50 112)">
+      <path class="icon" d="M22 36c0-11 9-20 20-20h136c11 0 20 9 20 20v44c0 7-5 14-12 15l-38 8c-9 2-18-2-23-10l-10-15c-4-5-11-5-15 0l-10 15c-5 8-14 12-23 10l-38-8c-7-1-12-8-12-15Z"/>
+      <path class="icon" d="M62 58h30"/>
+      <path class="icon" d="M128 58h30"/>
+      <path class="icon" d="M198 48l24-10"/>
+      <path class="icon" d="M22 48-2 38"/>
+    </g>
+  </g>
+
+  <g transform="translate(440 50)">
+    <rect class="card" width="320" height="320" rx="28"/>
+    <text class="label" x="28" y="44">Option 2</text>
+    <text class="hint" x="28" y="74">Sleek visor</text>
+    <g transform="translate(46 124)">
+      <path class="icon" d="M20 38c0-13 10-23 23-23h146c13 0 23 10 23 23v28c0 11-8 20-18 22l-42 9c-10 2-19-1-26-8l-8-9c-6-6-15-6-21 0l-8 9c-7 7-16 10-26 8l-42-9c-10-2-18-11-18-22Z"/>
+      <path class="icon" d="M52 52c12-7 28-10 45-10"/>
+      <path class="icon" d="M135 42c17 0 33 3 45 10"/>
+      <path class="icon" d="M212 44l20-8"/>
+      <path class="icon" d="M20 44 0 36"/>
+    </g>
+  </g>
+
+  <g transform="translate(820 50)">
+    <rect class="card" width="320" height="320" rx="28"/>
+    <text class="label" x="28" y="44">Option 3</text>
+    <text class="hint" x="28" y="74">Chunkier / gaming</text>
+    <g transform="translate(40 120)">
+      <path class="icon" d="M26 34c0-11 9-20 20-20h148c11 0 20 9 20 20v48c0 8-5 15-13 17l-34 8c-11 3-22-1-29-10l-11-14c-5-7-15-7-20 0l-11 14c-7 9-18 13-29 10l-34-8c-8-2-13-9-13-17Z"/>
+      <rect x="58" y="44" width="38" height="24" rx="8" class="icon"/>
+      <rect x="144" y="44" width="38" height="24" rx="8" class="icon"/>
+      <path class="icon" d="M214 46l20-8"/>
+      <path class="icon" d="M26 46 6 38"/>
+    </g>
+  </g>
+
+  <g transform="translate(60 430)">
+    <rect class="card" width="320" height="320" rx="28"/>
+    <text class="label" x="28" y="44">Option 4</text>
+    <text class="hint" x="28" y="74">Minimal line icon</text>
+    <g transform="translate(54 138)">
+      <path class="icon" d="M18 30c0-9 7-16 16-16h142c9 0 16 7 16 16v34c0 8-5 14-13 16l-34 7c-8 2-16-1-22-7l-11-12c-5-5-13-5-18 0L83 80c-6 6-14 9-22 7l-34-7c-8-2-13-8-13-16Z"/>
+      <path class="icon" d="M60 47h28"/>
+      <path class="icon" d="M122 47h28"/>
+    </g>
+  </g>
+
+  <g transform="translate(440 430)">
+    <rect class="card" width="320" height="320" rx="28"/>
+    <text class="label" x="28" y="44">Option 5</text>
+    <text class="hint" x="28" y="74">Filled / app-icon feel</text>
+    <g transform="translate(56 132)">
+      <path class="solid" d="M18 36c0-12 10-22 22-22h136c12 0 22 10 22 22v35c0 10-7 18-16 20l-39 8c-9 2-18-2-23-9l-9-12c-4-5-11-5-15 0l-9 12c-5 7-14 11-23 9l-39-8c-9-2-16-10-16-20Z"/>
+      <rect x="54" y="42" width="42" height="26" rx="8" fill="#fff8f1"/>
+      <rect x="124" y="42" width="42" height="26" rx="8" fill="#fff8f1"/>
+      <rect x="101" y="49" width="18" height="12" rx="6" fill="#fff8f1"/>
+    </g>
+  </g>
+
+  <g transform="translate(820 430)">
+    <rect class="card" width="320" height="320" rx="28"/>
+    <text class="label" x="28" y="44">Option 6</text>
+    <text class="hint" x="28" y="74">Techy / angular</text>
+    <g transform="translate(38 126)">
+      <path class="icon" d="M24 34 52 16h146l28 18v45c0 9-6 16-15 18l-34 7c-10 2-20-1-27-8l-13-13c-5-5-14-5-19 0l-13 13c-7 7-17 10-27 8l-34-7c-9-2-15-9-15-18Z"/>
+      <path class="icon" d="M66 46h30"/>
+      <path class="icon" d="M154 46h30"/>
+      <path class="icon" d="M0 44 24 38"/>
+      <path class="icon" d="M226 38 250 44"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Cisco Packet Tracer icon</title>
+  <defs>
+    <linearGradient id="packet-lens" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b7b7b"/>
+      <stop offset="100%" stop-color="#2f2f2f"/>
+    </linearGradient>
+    <linearGradient id="packet-grid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8ae68c"/>
+      <stop offset="100%" stop-color="#2ea45c"/>
+    </linearGradient>
+    <linearGradient id="packet-mail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4d652"/>
+      <stop offset="100%" stop-color="#b98f22"/>
+    </linearGradient>
+  </defs>
+  <circle cx="22" cy="29" r="15" fill="url(#packet-lens)"/>
+  <circle cx="22" cy="29" r="10.5" fill="#464646"/>
+  <path d="M36 22.5h16v13H36z" fill="url(#packet-mail)"/>
+  <path d="m36 22.5 8 6.1 8-6.1" fill="none" stroke="#8f6b17" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  <rect x="27.5" y="24.5" width="17" height="17" rx="1.5" fill="url(#packet-grid)"/>
+  <path d="M31.8 24.5v17M36 24.5v17M40.2 24.5v17M27.5 28.7h17M27.5 32.9h17M27.5 37.1h17" stroke="#18723d" stroke-width="1"/>
+  <path d="m33.5 40.5 8.5 8.5" fill="none" stroke="#3a3a3a" stroke-linecap="round" stroke-width="5"/>
+  <circle cx="22" cy="29" r="3.2" fill="#d5d5d5"/>
+</svg>
