@@ -269,8 +269,9 @@ safeInit(() => {
 safeInit(() => {
   const cursorDot = document.querySelector(".cursor-dot");
   const cursorRing = document.querySelector(".cursor-ring");
+  const usesTouchPointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
 
-  if (!cursorDot || !cursorRing) {
+  if (!cursorDot || !cursorRing || usesTouchPointer) {
     return;
   }
 
