@@ -70,8 +70,6 @@ function safeInit(task) {
 
 safeInit(() => {
   const toggleButton = document.querySelector(".theme-toggle");
-  const storedTheme = localStorage.getItem("faizan-theme");
-  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
   function applyTheme(theme, persist = true) {
     root.dataset.theme = theme;
@@ -81,28 +79,11 @@ safeInit(() => {
     }
   }
 
-  function onMediaQueryChange(query, handler) {
-    if (typeof query.addEventListener === "function") {
-      query.addEventListener("change", handler);
-      return;
-    }
-
-    if (typeof query.addListener === "function") {
-      query.addListener(handler);
-    }
-  }
-
-  applyTheme(storedTheme || (systemPrefersDark.matches ? "dark" : "light"), Boolean(storedTheme));
+  applyTheme("light", false);
 
   toggleButton?.addEventListener("click", () => {
     const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
     applyTheme(nextTheme);
-  });
-
-  onMediaQueryChange(systemPrefersDark, (event) => {
-    if (!localStorage.getItem("faizan-theme")) {
-      applyTheme(event.matches ? "dark" : "light", false);
-    }
   });
 });
 
@@ -238,6 +219,35 @@ safeInit(() => {
       scrollToSectionTarget(targetId);
     });
   });
+});
+
+safeInit(() => {
+  const nav = document.querySelector(".site-nav");
+  const shell = document.querySelector(".island-shell");
+
+  if (!nav || !shell) {
+    return;
+  }
+
+  function updateNavHint() {
+    const hasOverflow = nav.scrollWidth > nav.clientWidth + 4;
+    const hasMoved = nav.scrollLeft > 18;
+    const isNearEnd = nav.scrollLeft + nav.clientWidth >= nav.scrollWidth - 18;
+    shell.classList.toggle("nav-hint-hidden", !hasOverflow || hasMoved || isNearEnd);
+  }
+
+  nav.addEventListener("scroll", updateNavHint, { passive: true });
+  window.addEventListener("resize", updateNavHint);
+  updateNavHint();
+});
+
+safeInit(() => {
+  function updateScrollHint() {
+    root.classList.toggle("scroll-hint-hidden", window.scrollY > 72);
+  }
+
+  window.addEventListener("scroll", updateScrollHint, { passive: true });
+  updateScrollHint();
 });
 
 safeInit(() => {
